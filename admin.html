@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Land - Admin Panel</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <div class="login-box">
+            <h1>Admin Login</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="admin-container" id="adminContainer">
+        <h1>Menu Management</h1>
+        
+        <div class="admin-actions">
+            <button id="loadMenuBtn" class="btn">Load Menu Data</button>
+            <button id="savePricesBtn" class="btn">Save All Prices</button>
+            <button id="logoutBtn" class="btn">Logout</button>
+        </div>
+
+        <div class="price-editors">
+            <div class="price-editor">
+                <h2>Starters</h2>
+                <div class="price-items" id="startersEditor"></div>
+            </div>
+            
+            <div class="price-editor">
+                <h2>Main Courses</h2>
+                <div class="price-items" id="mainsEditor"></div>
+            </div>
+            
+            <div class="price-editor">
+                <h2>Desserts</h2>
+                <div class="price-items" id="dessertsEditor"></div>
+            </div>
+            
+            <div class="price-editor">
+                <h2>Drinks</h2>
+                <div class="price-items" id="drinksEditor"></div>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" id="menuFileInput" accept=".html" style="display:none;">
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

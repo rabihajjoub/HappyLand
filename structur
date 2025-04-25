@@ -1,0 +1,11 @@
+happy-land/
+├── index.html
+├── admin.html
+├── css/
+│   ├── style.css
+│   └── admin.css
+├── js/
+│   ├── main.js
+│   └── admin.js
+└── images/
+    └── (all your image files)
